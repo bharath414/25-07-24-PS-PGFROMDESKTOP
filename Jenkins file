@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Run Newman') {
+            steps {
+                bat 'newman run your-collection.json'
+            }
+        }
+    }
+}
